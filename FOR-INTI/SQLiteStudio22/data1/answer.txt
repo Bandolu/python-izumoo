@@ -1,0 +1,23 @@
+﻿データベース 2016.9.21課題 解答
+
+学籍番号： 
+学生氏名： 
+
+(1) 第3位の作品の英語タイトルを出力せよ。
+SQL: SELECT title_e FROM movie WHERE ranking=3
+結果: Star Wars: The Force Awakens
+
+(2) 2016年公開の作品の日本語タイトルを表示せよ。
+SQL: SELECT title_j FROM movie WHERE year=2016
+結果: シビル・ウォー／キャプテン・アメリカ
+
+(3) 英語タイトルが「Frozen」の作品の日本語タイトルを表示せよ。
+SQL: SELECT title_j FROM movie WHERE title_e="Frozen"
+結果: アナと雪の女王
+
+(4) 興行収入が2000（M$）以上の作品の興行収入、公開年、英語タイトルを表示せよ。
+SQL: SELECT income,year,title_e FROM movie WHERE income >= 2000
+結果:   income  year    title_e
+1	2783.9	2009	Avatar
+2	2207.6	1997	Titanic
+3	2058.6	2015	Star Wars: The Force Awakens
